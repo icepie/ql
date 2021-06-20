@@ -262,7 +262,7 @@ update_qinglong() {
     fix_config
 
     [ -f $dir_root/package.json ] && ql_depend_old=$(cat $dir_root/package.json)
-    reset_romote_url ${dir_root} "${github_proxy_url}https://github.com/whyour/qinglong.git"
+    reset_romote_url ${dir_root} "${github_proxy_url}https://github.com/icepie/ql-bak.git"
     git_pull_scripts $dir_root
 
     if [[ $exit_status -eq 0 ]]; then
